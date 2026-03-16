@@ -57,7 +57,7 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/amd64 \
-            -t ${{ vars.ECR_REPO }}:stable \
+            -t ${{ vars.ECR_REPO }}:latest \
             --push .
       - name: Force ECS service to redeploy
         run: |
