@@ -6,6 +6,8 @@ name: Python application & deploy to AWS ECS
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 permissions:
   contents: read
