@@ -31,9 +31,6 @@ db: List[Contact] = [
     Contact(id="2", name="fds", tel="123", timestamp=str(datetime.now()))
 ]
 
-@app.get("/")
-async def hello():
-    return "Welcome to ITP4254M Tut4"
 
 # 1. 獲取所有聯絡人 (對應原本的 index_json2.php GET)
 @app.get("/index_json2.php", response_model=List[Contact])
